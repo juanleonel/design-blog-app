@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+}
+
+.image {
+  border-radius: 8px;
+  display: block;
+}
+
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+/* Estilo básico para el cuerpo del texto */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Estilo para los encabezados */
+h1, h2, h3 {
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+/* Estilo para los párrafos */
+p {
+  margin-bottom: 20px;
+}
+
+/* Estilo para las listas no ordenadas */
+ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Estilo para enlaces */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.m-botton-2 {
+  margin-bottom: 2%;
+}
+.card {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.date-info {
+  color: #4e4e4e;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.info-span {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.primary-span {
+  color: #0088e2;
+}
+
+.danger-label {
+  background: #c33131;
+  color: white;
+  padding: 4px;
+  font-size: 12px;
+}
+.success-label {
+  background: #34a331;
+  color: white;
+  padding: 4px;
+  font-size: 12px;
+}
+.primary-label {
+  background: #0088e2;
+  color: white;
+  padding: 4px;
+  font-size: 12px;
+}
+
+.tag-span {
+
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.navbar-container {
+  border-bottom: 1px solid #ccc;
+}
+.navbar-container a {
+  padding: 1%;
+  border-radius: 3px 3px 0 0;
+  text-decoration: none;
+  color: #ffff;
+  background-color: #ddaa00;
+}
+
+a:hover, a:focus, a:active {
+  color: black;
+  background-color: #ffcc22;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #ddaa00;
+}
+/* Estilos generales para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-container a {
+    width: 100%;
+    padding: 2%
+  }
+
+  /* Aquí puedes aplicar estilos específicos para pantallas más pequeñas */
+  body {
+    /* background-color: aquamarine; */
+    font-size: 14px; /* Reducir el tamaño de fuente para dispositivos móviles */
+  }
+
+  .card {
+    padding: 2%;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .image {
+    width: 100%;
+  }
+
+  .container {
+    margin: 5% 5%;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    /* background: #c33131; */
+  }
+  .card {
+    padding: 1% 1%;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .image {
+    width: 40%;
+    height: 40%;
+    /* object-fit: contain; O "cover" según necesites */
+    display: block;
+  }
+  .card-description {
+    width: 59%;
+    padding: 1%;
+    max-height: 250px;
+    overflow: hidden;
+  }
+  .container {
+    margin: 5% 5%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    padding: 1% 1%;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .image {
+    width: 40%;
+    height: 40%;
+    /* object-fit: contain; O "cover" según necesites */
+    display: block;
+  }
+  .card-description {
+    width: 59%;
+    padding: 1%;
+    max-height: 250px;
+    overflow: hidden;
+  }
+  .container {
+    margin: 5% 20%;
+  }
+}

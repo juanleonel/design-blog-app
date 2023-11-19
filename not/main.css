@@ -1,0 +1,29 @@
+.card {
+  display: flex;
+  align-items: flex-start; /* Alinear elementos en la parte superior */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  overflow: hidden;
+}
+
+.card img {
+  max-width: 250px;
+  max-height: 100%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.card-content {
+  flex: 1;
+  max-height: 100%;
+  overflow-y: auto; /* Mostrar barra de desplazamiento si el contenido excede la altura */
+}
+
+.card-content h2 {
+  margin-top: 0;
+}
+
+/* Estilos adicionales según necesidad */
